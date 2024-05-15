@@ -549,6 +549,7 @@ body {
         position: relative;
         height: 100%;
         width: 22vmax;
+        margin-right: 8vmax;
 
         .frame {
           position: absolute;
@@ -595,6 +596,7 @@ body {
         .framebox {
           height: 50vmax;
           width: 60%;
+          margin-right: 0;
         }
       }
     }

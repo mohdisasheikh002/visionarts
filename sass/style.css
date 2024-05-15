@@ -496,6 +496,7 @@ body {
   position: relative;
   height: 100%;
   width: 22vmax;
+  margin-right: 8vmax;
 }
 .wrapper .sec4 .right .framebox .frame {
   position: absolute;
@@ -541,6 +542,7 @@ body {
   .wrapper .sec4 .right .framebox {
     height: 50vmax;
     width: 60%;
+    margin-right: 0;
   }
 }
 @media (max-width: 15cm) {
