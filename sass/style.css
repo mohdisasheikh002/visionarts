@@ -534,12 +534,18 @@ body {
   }
 }
 @media (max-width: 15cm) {
+  .wrapper .sec4 .left {
+    height: -moz-fit-content;
+    height: fit-content;
+    width: 100%;
+    padding-left: 3vmax;
+  }
   .wrapper .sec4 .right {
-    padding: 0 3.2vmax;
-    justify-content: center;
+    padding: 0 4vmax;
+    justify-content: flex-start;
   }
   .wrapper .sec4 .right .framebox {
     height: 50vmax;
-    width: 96%;
+    width: 90%;
   }
 }/*# sourceMappingURL=style.css.map */
