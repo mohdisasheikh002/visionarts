@@ -296,7 +296,7 @@ body {
       }
 
       .sliderbox {
-        height: 50vmax;
+        height: 60vmax;
 
         .imgbox {
           width: 100%;
@@ -361,6 +361,17 @@ body {
       border-bottom: 1px solid #fff;
       border-left: 1px solid #fff;
       overflow: hidden;
+      cursor: pointer;
+
+      h5 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        font-family: "Helvetica";
+        font-weight: 500;
+        transform: translate(-50%, -50%);
+        pointer-events: none;
+      }
 
       i {
         position: absolute;

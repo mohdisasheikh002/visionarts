@@ -267,7 +267,7 @@ body {
     margin-top: 2vmax;
   }
   .wrapper .sec2 .sliderbox {
-    height: 50vmax;
+    height: 60vmax;
   }
   .wrapper .sec2 .sliderbox .imgbox {
     width: 100%;
@@ -326,6 +326,16 @@ body {
   border-bottom: 1px solid #fff;
   border-left: 1px solid #fff;
   overflow: hidden;
+  cursor: pointer;
+}
+.wrapper .sec3 .stripebox h5 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-family: "Helvetica";
+  font-weight: 500;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
 }
 .wrapper .sec3 .stripebox i {
   position: absolute;

@@ -91,6 +91,7 @@ function sec3Animation() {
     let gt = sb.split("-")[1];
     let dec = 100 - (4 - gt) * 4;
     let sbelem = ".sb-" + gt + "-elem";
+    let number = document.querySelector(".stripebox h5");
 
     if (window.screen.width < 850) {
       dec = 100 - (4 - gt) * 6;
@@ -101,22 +102,45 @@ function sec3Animation() {
         ease: "expo.out",
       });
 
-      gsap.to(dets.target.children, {
+      gsap.to(dets.target.children[0], {
+        opacity: 0,
+        pointerEvents: "all",
+      });
+
+      gsap.to(dets.target.children[1], {
         opacity: 1,
         pointerEvents: "all",
-        stagger: 0.5,
+        delay: 1.5,
+      });
+
+      gsap.to(dets.target.children[2], {
+        opacity: 1,
+        pointerEvents: "all",
         delay: 1,
       });
 
+      gsap.to(dets.target.children[3], {
+        opacity: 1,
+        pointerEvents: "all",
+        delay: 0.5,
+      });
+
       document.querySelector(sbelem).addEventListener("click", function (dets) {
+        gsap.to(number, {
+          opacity: 1,
+          delay: 2,
+          pointerEvents: "none",
+        });
+
         gsap.to(sbelem, {
           opacity: 0,
           pointerEvents: "none",
-          stagger: 0.5,
+          stagger: 0.25,
         });
+
         gsap.to("#" + sb, {
           height: "6vh",
-          delay: 1.5,
+          delay: 1,
           ease: "expo.out",
           duration: 2,
         });
@@ -128,22 +152,45 @@ function sec3Animation() {
         ease: "expo.out",
       });
 
-      gsap.to(dets.target.children, {
+      gsap.to(dets.target.children[0], {
+        opacity: 0,
+        pointerEvents: "all",
+      });
+
+      gsap.to(dets.target.children[1], {
         opacity: 1,
         pointerEvents: "all",
-        stagger: 0.5,
+        delay: 1.5,
+      });
+
+      gsap.to(dets.target.children[2], {
+        opacity: 1,
+        pointerEvents: "all",
         delay: 1,
       });
 
+      gsap.to(dets.target.children[3], {
+        opacity: 1,
+        pointerEvents: "all",
+        delay: 0.5,
+      });
+
       document.querySelector(sbelem).addEventListener("click", function (dets) {
+        gsap.to(number, {
+          opacity: 1,
+          delay: 2,
+          pointerEvents: "none",
+        });
+
         gsap.to(sbelem, {
           opacity: 0,
           pointerEvents: "none",
-          stagger: 0.5,
+          stagger: 0.25,
         });
+
         gsap.to("#" + sb, {
           width: "4%",
-          delay: 1.5,
+          delay: 1,
           ease: "expo.out",
           duration: 2,
         });
