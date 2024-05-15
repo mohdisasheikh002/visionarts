@@ -1,0 +1,77 @@
+@font-face {
+  src: url("../fonts/Hello\ Paris\ Sans\ Regular.ttf");
+  font-family: "Hello Paris";
+}
+
+@font-face {
+  src: url("../fonts/Bigilla.otf");
+  font-family: "Bigilla";
+  font-weight: 100;
+}
+
+@font-face {
+  src: url("../fonts/Helvetica.ttf");
+  font-family: "Helvetica";
+}
+
+.fs1 {
+  font-size: 13vmax;
+  color: #fff;
+}
+
+.fs2 {
+  font-size: 6vmax;
+  color: #fff;
+}
+
+.fs3 {
+  font-size: 4vmax;
+  color: #fff;
+}
+
+.fs4 {
+  font-size: 2vmax;
+  color: #fff;
+}
+
+.fs5 {
+  font-size: 1.2vmax;
+  color: #fff;
+}
+
+.fs6 {
+  font-size: 0.8vmax;
+  color: #fff;
+}
+
+@media (max-width: 30cm) {
+  .fs1 {
+    font-size: 13vmax;
+    color: #fff;
+  }
+
+  .fs2 {
+    font-size: 7vmax;
+    color: #fff;
+  }
+
+  .fs3 {
+    font-size: 5vmax;
+    color: #fff;
+  }
+
+  .fs4 {
+    font-size: 3vmax;
+    color: #fff;
+  }
+
+  .fs5 {
+    font-size: 2vmax;
+    color: #fff;
+  }
+
+  .fs6 {
+    font-size: 1.2vmax;
+    color: #fff;
+  }
+}
