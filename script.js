@@ -91,7 +91,7 @@ function sec3Animation() {
     let gt = sb.split("-")[1];
     let dec = 100 - (4 - gt) * 4;
     let sbelem = ".sb-" + gt + "-elem";
-    let number = document.querySelector(".stripebox h5");
+    let number = document.querySelectorAll(".stripebox h5");
 
     if (window.screen.width < 850) {
       dec = 100 - (4 - gt) * 6;

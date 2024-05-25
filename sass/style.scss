@@ -10,6 +10,7 @@ html,
 body {
   height: 100%;
   width: 100%;
+  background-color: #233430;
 }
 
 .wrapper {
@@ -617,6 +618,152 @@ body {
         .framebox {
           height: 50vmax;
           width: 90%;
+        }
+      }
+    }
+  }
+
+  .sec5 {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 5vmax;
+    background-color: #233430;
+    padding: 2vmax 4vmax;
+    padding-bottom: 10vmax;
+
+    h1 {
+      font-family: "Hello Paris";
+      font-weight: 100;
+      line-height: 8.5vmax;
+      width: 100%;
+      color: #fff;
+      letter-spacing: -0.5vmax;
+      word-spacing: 1.5vmax;
+    }
+
+    p {
+      position: relative;
+      line-height: 1.8vmax;
+      font-family: "Helvetica";
+      width: 50%;
+    }
+  }
+
+  @media (max-width: 30cm) {
+    .sec5 {
+      align-items: flex-start;
+      gap: 6vmax;
+      padding: 4vmax 3vmax;
+      padding-bottom: 10vmax;
+
+      h1 {
+        line-height: 8.5vmax;
+      }
+
+      p {
+        position: relative;
+        line-height: 2.8vmax;
+        font-family: "Helvetica";
+        width: 95%;
+      }
+    }
+  }
+
+  .sec6 {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 4vmax;
+    padding-bottom: 4vmax;
+
+    .imgbox {
+      height: 35vmax;
+      width: 55vmax;
+      background-color: red;
+      clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+
+      img {
+        height: 105%;
+        width: 100%;
+        filter: contrast(1.5);
+      }
+    }
+
+    h4 {
+      font-family: "Bigilla";
+      font-weight: 500;
+      padding: 0.8vmax 3vmax;
+      border: 1px solid #fff;
+      border-radius: 5vmax;
+      margin-top: 4vmax;
+      cursor: pointer;
+    }
+  }
+
+  @media (max-width: 30cm) {
+    .sec6 {
+      padding: 0 3vmax;
+      padding-bottom: 23.1vmax;
+
+      .imgbox {
+        height: 30vmax;
+        width: 100%;
+      }
+
+      h4 {
+        margin-top: 6vmax;
+      }
+    }
+  }
+
+  .footer {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 2vmax 4vmax;
+
+    h5 {
+      position: relative;
+      font-family: "Helvetica";
+      font-weight: 500;
+      text-decoration: none;
+      letter-spacing: 0.05vmax;
+      color: #fff;
+      cursor: pointer;
+
+      span {
+        font-family: "Bigilla";
+      }
+    }
+
+    .socialhandels {
+      display: flex;
+      gap: 1vmax;
+
+      i {
+        font-size: 1.5vmax;
+
+        &:nth-child(3) {
+          margin-top: 0.1vmax;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 30cm) {
+    .footer {
+      .socialhandels {
+        gap: 1.5vmax;
+
+        i {
+          font-size: 2.3vmax;
         }
       }
     }
