@@ -12,6 +12,37 @@ body {
   background-color: #233430;
 }
 
+.loader {
+  position: absolute;
+  top: 0%;
+  left: 0;
+  z-index: 999;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #233430;
+  transition: 0.25s linear;
+}
+.loader .textbox {
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.loader .textbox h3 {
+  font-family: "Bigilla";
+  font-weight: 500;
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+}
+.loader .textbox h3 span {
+  filter: "blur(2px)";
+  opacity: 0;
+}
+
 .wrapper {
   position: relative;
   height: -moz-fit-content;
@@ -22,7 +53,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 999;
+  z-index: 99;
   height: -moz-fit-content;
   height: fit-content;
   width: 100%;
@@ -640,7 +671,7 @@ body {
 @media (max-width: 30cm) {
   .wrapper .sec6 {
     padding: 0 3vmax;
-    padding-bottom: 23.1vmax;
+    padding-bottom: 8vmax;
   }
   .wrapper .sec6 .imgbox {
     height: 30vmax;
@@ -655,7 +686,7 @@ body {
   height: fit-content;
   width: 100%;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: space-between;
   padding: 2vmax 4vmax;
 }
@@ -682,6 +713,10 @@ body {
   margin-top: 0.1vmax;
 }
 @media (max-width: 30cm) {
+  .wrapper .footer {
+    justify-content: space-between;
+    padding: 2.5vmax 3vmax;
+  }
   .wrapper .footer .socialhandels {
     gap: 1.5vmax;
   }

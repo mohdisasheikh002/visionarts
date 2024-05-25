@@ -1,24 +1,77 @@
 gsap.registerPlugin(ScrollTrigger);
 
+function loader() {
+  const wrapper = document.querySelector(".wrapper");
+  wrapper.style.height = "100vh";
+  wrapper.style.overflow = "hidden";
+
+  let loaderHeading = document.querySelector(".loader .textbox h3");
+  var clutter1 = "";
+  loaderHeading.textContent.split("").forEach(function (charc) {
+    clutter1 += `<span>${charc}</span>`;
+  });
+  loaderHeading.innerHTML = clutter1;
+
+  setTimeout(() => {
+    document.fonts.ready.then(function () {
+      const loader = document.querySelector(".loader");
+
+      let tl1 = gsap.timeline();
+
+      tl1
+        .to(".textbox h3 span", {
+          stagger: 0.1,
+          filter: "blur(0px)",
+          duration: 0.8,
+          opacity: 1,
+          ease: Expo,
+        })
+        .to(".textbox h3 span", {
+          stagger: 0.1,
+          filter: "blur(2px)",
+          duration: 0.2,
+          opacity: 0,
+          ease: Expo,
+        })
+        .to(loader, {
+          height: "0vh",
+          onComplete: () => {
+            loader.style.display = none;
+          },
+          onUpdate: () => {
+            wrapper.style.height = "fit-content";
+            wrapper.style.overflow = "visible";
+          },
+        })
+        .to(loader.children[0], {
+          display: "none",
+        });
+    });
+  }, 2000);
+}
+
+loader();
+
 function sec1Animation() {
   document.querySelectorAll(".textbox h1").forEach(function (h1) {
-    var clutter = "";
+    var clutter2 = "";
     h1.textContent.split("").forEach(function (charc) {
-      clutter += `<span>${charc}</span>`;
+      clutter2 += `<span>${charc}</span>`;
     });
-    h1.innerHTML = clutter;
+    h1.innerHTML = clutter2;
   });
 
-  var tl = gsap.timeline();
+  var tl2 = gsap.timeline({ delay: 5 });
 
-  tl.from(".textbox h1 span", {
-    stagger: 0.1,
-    filter: "blur(2px)",
-    scale: 1.5,
-    duration: 2,
-    opacity: 0,
-    ease: Expo,
-  })
+  tl2
+    .from(".textbox h1 span", {
+      stagger: 0.1,
+      filter: "blur(2px)",
+      scale: 1.5,
+      duration: 2,
+      opacity: 0,
+      ease: Expo,
+    })
     .from(
       ".nav .linkbox .fs5",
       {
